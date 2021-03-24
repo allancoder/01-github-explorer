@@ -6,6 +6,7 @@
 * Yarn
 * Babel
 * Webpack
+* ReactJS
 
 # Rodando a aplicação
 
