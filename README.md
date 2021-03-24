@@ -1,15 +1,16 @@
-# 01-github-explorer
+# Github Explorer
 
-# Objetivo da aplicação
+## Purpose of the application
 
-# Tecnologias
+## Technologies
 * Yarn
 * Babel
 * Webpack
 * ReactJS
 
-# Rodando a aplicação
+## Running the app
+Make sure you have previously installed Git, Node and Yarn.
 
-Após dar um git clone na aplicação, no terminal, digite o comando yarn para que ele baixe e instale todas as dependências do projeto, feito isso, ainda no seu terminal digite o comando yarn dev para rodar a aplicação em modo de desenvolvedor.
+On your terminal type the command ```git clone git@github.com:allancoder/01-github-explorer.git``` after that, in the terminal on the project folder, type the command ```yarn``` so that it downloads and installs all the project's dependencies, done that, still in your terminal type the command ```yarn dev``` to run the application in developer mode.
 
-Tenha a certeza de ter instalado anteriormente o NodeJS e o Yarn em sua maquina.
+Access ```http://localhost:8080``` to see the application running.
