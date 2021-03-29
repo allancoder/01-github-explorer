@@ -6,6 +6,9 @@
 * Yarn
 * Babel
 * Webpack
+
+* Typescript
+* Sass
 * ReactJS
 
 ## Running the app

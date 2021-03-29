@@ -1,29 +1,128 @@
-section.repository-list {
-	margin: 40px;
+@import './variables.scss';
 
-	h1 {
-		margin-bottom: 24px;
-	};
+section.repository-list {
+	background: $white;
+	padding: 1.5rem;
+	border-radius: 1.5rem;
+	width: 100%;
+	max-width: 720px;
+	margin: 48px auto;
+
+	.brand {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 3rem;
+
+		img {
+			display: block;
+			width: 2.5rem;
+			height: 2.5rem;
+			margin-right: 1rem;
+		}
+
+		h1 {
+			color: $github-color;
+			font-size: 2rem;
+		};
+	}
+
+	.not-found {
+		h2 {
+			color: $muted;
+			text-align: center;
+		}
+	}
+
+	form {
+		margin-bottom: 3rem;
+
+		h2 {
+			color: $body;
+			text-align: center;
+			margin-bottom: 1rem;
+		}
+
+		.search {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			input {
+				flex: 1;
+				padding: 1rem 1.5rem;
+				border-radius: 1rem;
+				border: 1px solid $light;
+				margin-right: 1rem;
+
+				&::placeholder {
+					color: $muted;
+				}
+			}
+
+			button {
+				background: $github-color;
+				color: $white;
+
+				display: flex;
+				justify-content: center;
+				align-items: center;
+
+				padding: 1rem 1.5rem;
+				text-transform: uppercase;
+				font-weight: 600;
+				border-radius: 1rem;
+				transition: all 0.2s ease-in-out;
+				border: 1px solid $github-color;
+
+				&:hover {
+					opacity: 0.8;
+				}
+			}
+		}
+	}
 
 	ul {
 		list-style: none;
 
 		li {
+			background: $dark;
+			padding: 1.4rem;
+			border-radius: 1.5rem;
+
 			& + li {
-				margin-top: 24px;
+				margin-top: 1.5rem;
+			}
+
+			strong {
+				font-size: 1.5rem;
+				color: $primary;
 			}
 
 			p	{
-				font-size: 14px;
-				color: #444;
-				margin-top: 8px;
+				font-size: 1rem;
+				margin-top: 0.5rem;
+				color: $white;
 			}
 
 			a {
-				display: inline-block;
-				margin-top: 16px;
+				background: $github-color;
+				width: 100%;
+				color: $white;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				margin-top: 1.5rem;
 				text-decoration: none;
-				color: #8257e6;
+				padding: 1rem 1.5rem;
+				text-transform: uppercase;
+				font-weight: 600;
+				border-radius: 1rem;
+				transition: all 0.2s ease-in-out;
+
+				&:hover {
+					opacity: 0.8;
+				}
 			}
 		}
 	}
